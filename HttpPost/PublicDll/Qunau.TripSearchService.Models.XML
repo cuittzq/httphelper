@@ -1,0 +1,1354 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Qunau.TripSearchService.Models</name>
+    </assembly>
+    <members>
+        <member name="T:Qunau.TripSearchService.Models.AreaCity">
+            <summary>
+            地区Model
+            </summary>
+        </member>
+        <member name="P:Qunau.TripSearchService.Models.AreaCity.AreaID">
+            <summary>
+            地区ID
+            </summary>
+        </member>
+        <member name="P:Qunau.TripSearchService.Models.AreaCity.AreaName">
+            <summary>
+            地区名称
+            </summary>
+        </member>
+        <member name="P:Qunau.TripSearchService.Models.AreaCity.AreaCode">
+            <summary>
+            当前编码
+            </summary>
+        </member>
+        <member name="P:Qunau.TripSearchService.Models.AreaCity.AllParentCode">
+            <summary>
+            完整编码
+            </summary>
+        </member>
+        <member name="P:Qunau.TripSearchService.Models.AreaCity.ParentID">
+            <summary>
+            父级ID
+            </summary>
+        </member>
+        <member name="P:Qunau.TripSearchService.Models.AreaCity.AreaType">
+            <summary>
+            地区类型 1:国家 2：省 3：城市 4：区县
+            </summary>
+        </member>
+        <member name="P:Qunau.TripSearchService.Models.AreaCity.Abbr">
+            <summary>
+            简拼
+            </summary>
+        </member>
+        <member name="P:Qunau.TripSearchService.Models.AreaCity.Pinyin">
+            <summary>
+            拼音
+            </summary>
+        </member>
+        <member name="P:Qunau.TripSearchService.Models.AreaCity.AreaHot">
+            <summary>
+            地区热度
+            </summary>
+        </member>
+        <member name="P:Qunau.TripSearchService.Models.AreaCity.LatLng">
+            <summary>
+            BaiDuMap坐标
+            </summary>
+        </member>
+        <member name="P:Qunau.TripSearchService.Models.AreaCity.Distance">
+            <summary>
+            扩展字段 表示当前经纬度距某一经纬度的距离
+            </summary>
+        </member>
+        <member name="T:Qunau.TripSearchService.Models.B2BSearchCollection">
+            <summary>
+            B2B查询条件集合
+            </summary>
+        </member>
+        <member name="P:Qunau.TripSearchService.Models.B2BSearchCollection.SearchModel">
+            <summary>
+            查询模式
+            </summary>
+        </member>
+        <member name="P:Qunau.TripSearchService.Models.B2BSearchCollection.SortBy">
+            <summary>
+            排序方式
+            </summary>
+        </member>
+        <member name="P:Qunau.TripSearchService.Models.B2BSearchCollection.DistributorCompanyID">
+            <summary>
+            独立分销商用户Id 0：非独立分销商
+            </summary>
+        </member>
+        <member name="P:Qunau.TripSearchService.Models.B2BSearchCollection.BuyerID">
+            <summary>
+            买家ID 0: 没有买家
+            </summary>
+        </member>
+        <member name="P:Qunau.TripSearchService.Models.B2BSearchCollection.StartingAreaCode">
+            <summary>
+            出发地城市编码 空不搜索
+            </summary>
+        </member>
+        <member name="P:Qunau.TripSearchService.Models.B2BSearchCollection.EndAreaCode">
+            <summary>
+            目的地城市编码 空不搜索
+            </summary>
+        </member>
+        <member name="P:Qunau.TripSearchService.Models.B2BSearchCollection.StartingLatLng">
+            <summary>
+            出发地坐标
+            </summary>
+            <value>The starting lat lon.</value>
+        </member>
+        <member name="P:Qunau.TripSearchService.Models.B2BSearchCollection.LineType">
+            <summary>
+            线路类型 0：不搜索 1:周边 2：国内 3：出境 4：港澳台
+            </summary>
+        </member>
+        <member name="P:Qunau.TripSearchService.Models.B2BSearchCollection.ProductType">
+            <summary>
+            产品类型 0：不搜索,1：为跟团游 2：为自由行
+            </summary>
+        </member>
+        <member name="P:Qunau.TripSearchService.Models.B2BSearchCollection.ProductCategory">
+            <summary>
+            产品分类 0：不搜索
+            </summary>
+        </member>
+        <member name="P:Qunau.TripSearchService.Models.B2BSearchCollection.SpecialLine">
+            <summary>
+            专线 0：不搜索
+            </summary>
+        </member>
+        <member name="P:Qunau.TripSearchService.Models.B2BSearchCollection.StrokeDays">
+            <summary>
+            行程天数 0：不搜索
+            </summary>
+        </member>
+        <member name="P:Qunau.TripSearchService.Models.B2BSearchCollection.StartDate">
+            <summary>
+            出团起始日期 null：不搜索
+            </summary>
+        </member>
+        <member name="P:Qunau.TripSearchService.Models.B2BSearchCollection.EndDate">
+            <summary>
+            出团日结束日期 null：不搜索
+            </summary>
+        </member>
+        <member name="P:Qunau.TripSearchService.Models.B2BSearchCollection.StartPrice">
+            <summary>
+            价格搜索 起始价 0：不搜索
+            </summary>
+        </member>
+        <member name="P:Qunau.TripSearchService.Models.B2BSearchCollection.EndPrice">
+            <summary>
+             价格搜索结束价 0：不搜索
+            </summary>
+        </member>
+        <member name="P:Qunau.TripSearchService.Models.B2BSearchCollection.GoTraffic">
+            <summary>
+            搜索去程交通工具 空：不搜索
+            </summary>
+        </member>
+        <member name="P:Qunau.TripSearchService.Models.B2BSearchCollection.ReturnTraffic">
+            <summary>
+            搜索回程交通工具 空：不搜索
+            </summary>
+        </member>
+        <member name="P:Qunau.TripSearchService.Models.B2BSearchCollection.Keys">
+            <summary>
+            搜索关键词 空：不搜索
+            </summary>
+        </member>
+        <member name="P:Qunau.TripSearchService.Models.B2BSearchCollection.Theme">
+            <summary>
+            主题
+            </summary>
+        </member>
+        <member name="P:Qunau.TripSearchService.Models.B2BSearchCollection.Exclusive">
+            <summary>
+            独家产品 true:查询
+            </summary>
+        </member>
+        <member name="P:Qunau.TripSearchService.Models.B2BSearchCollection.Protection">
+            <summary>
+            权益保障 true:查询
+            </summary>
+        </member>
+        <member name="P:Qunau.TripSearchService.Models.B2BSearchCollection.Certification">
+            <summary>
+            企业认证 true:查询
+            </summary>
+        </member>
+        <member name="P:Qunau.TripSearchService.Models.B2BSearchCollection.CompanyName">
+            <summary>
+            公司名称 空：不搜索
+            </summary>
+        </member>
+        <member name="P:Qunau.TripSearchService.Models.B2BSearchCollection.KeyWordType">
+            <summary>
+            关键字类型
+            </summary>
+        </member>
+        <member name="P:Qunau.TripSearchService.Models.B2BSearchCollection.ProductNo">
+            <summary>
+            产品编号
+            </summary>
+        </member>
+        <member name="T:Qunau.TripSearchService.Models.B2CTripSearch">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Qunau.TripSearchService.Models.B2CTripSearch.SortBy">
+            <summary>
+            排序方式
+            </summary>
+        </member>
+        <member name="P:Qunau.TripSearchService.Models.B2CTripSearch.CompanyID">
+            <summary>
+             B2C公司ID
+            </summary>
+        </member>
+        <member name="P:Qunau.TripSearchService.Models.B2CTripSearch.StartAreaCode">
+            <summary>
+            出发地城市编码 空搜索
+            </summary>
+        </member>
+        <member name="P:Qunau.TripSearchService.Models.B2CTripSearch.Keys">
+            <summary>
+            搜索关键词 空：不搜索
+            </summary>
+        </member>
+        <member name="P:Qunau.TripSearchService.Models.B2CTripSearch.ProductType">
+            <summary>
+            产品类型 0：不搜索 1:跟团游 2：自由行
+            </summary>
+        </member>
+        <member name="P:Qunau.TripSearchService.Models.B2CTripSearch.LineType">
+            <summary>
+            线路类型0：不搜索 1：周边 2：国内 3：出境 4：港澳台
+            </summary>
+        </member>
+        <member name="P:Qunau.TripSearchService.Models.B2CTripSearch.Month">
+            <summary>
+            发团月份查询 0：不搜索
+            </summary>
+        </member>
+        <member name="P:Qunau.TripSearchService.Models.B2CTripSearch.StrokeDays">
+            <summary>
+            行程天数
+            </summary>
+        </member>
+        <member name="P:Qunau.TripSearchService.Models.B2CTripSearch.ThemeID">
+            <summary>
+            主题ID
+            </summary>
+        </member>
+        <member name="P:Qunau.TripSearchService.Models.B2CTripSearch.GoTraffic">
+            <summary>
+            搜索去程交通工具 空：不搜索
+            </summary>
+        </member>
+        <member name="P:Qunau.TripSearchService.Models.B2CTripSearch.ReturnTraffic">
+            <summary>
+            搜索回程交通工具 空：不搜索
+            </summary>
+        </member>
+        <member name="P:Qunau.TripSearchService.Models.B2CTripSearch.StartPrice">
+            <summary>
+            价格搜索 起始价 0：不搜索
+            </summary>
+        </member>
+        <member name="P:Qunau.TripSearchService.Models.B2CTripSearch.EndPrice">
+            <summary>
+             价格搜索结束价 0：不搜索
+            </summary>
+        </member>
+        <member name="P:Qunau.TripSearchService.Models.B2CTripSearch.Exclusive">
+            <summary>
+            独家产品 true:查询
+            </summary>
+        </member>
+        <member name="P:Qunau.TripSearchService.Models.B2CTripSearch.Protection">
+            <summary>
+            权益保障 true:查询
+            </summary>
+        </member>
+        <member name="P:Qunau.TripSearchService.Models.B2CTripSearch.Certification">
+            <summary>
+            企业认证 true:查询
+            </summary>
+        </member>
+        <member name="P:Qunau.TripSearchService.Models.B2CTripSearch.ProductCategory">
+            <summary>
+            产品分类 1：专线  2：地接
+            </summary>
+        </member>
+        <member name="T:Qunau.TripSearchService.Models.KeyWordType">
+            <summary>
+            关键字查询类型
+            </summary>
+        </member>
+        <member name="F:Qunau.TripSearchService.Models.KeyWordType.None">
+            <summary>
+            无类型区分
+            </summary>
+        </member>
+        <member name="F:Qunau.TripSearchService.Models.KeyWordType.Area">
+            <summary>
+            地区
+            </summary>
+        </member>
+        <member name="F:Qunau.TripSearchService.Models.KeyWordType.Attraction">
+            <summary>
+            景点
+            </summary>
+        </member>
+        <member name="F:Qunau.TripSearchService.Models.KeyWordType.Theme">
+            <summary>
+            主题
+            </summary>
+        </member>
+        <member name="T:Qunau.TripSearchService.Models.LineCategory">
+            <summary>
+            产品线路分类
+            </summary>
+        </member>
+        <member name="F:Qunau.TripSearchService.Models.LineCategory.None">
+            <summary>
+            无意义
+            </summary>
+        </member>
+        <member name="F:Qunau.TripSearchService.Models.LineCategory.Line">
+            <summary>
+            线路类型产品
+            </summary>
+        </member>
+        <member name="F:Qunau.TripSearchService.Models.LineCategory.Ticket">
+            <summary>
+            景点门票类型
+            </summary>
+        </member>
+        <member name="T:Qunau.TripSearchService.Models.NotifyToUpdateType">
+            <summary>
+            产品更新通知类型
+            </summary>
+        </member>
+        <member name="F:Qunau.TripSearchService.Models.NotifyToUpdateType.All">
+            <summary>
+            全部
+            </summary>
+        </member>
+        <member name="F:Qunau.TripSearchService.Models.NotifyToUpdateType.Inventory">
+            <summary>
+            库存、价格
+            </summary>
+        </member>
+        <member name="F:Qunau.TripSearchService.Models.NotifyToUpdateType.Basic">
+            <summary>
+            基本信息
+            </summary>
+        </member>
+        <member name="F:Qunau.TripSearchService.Models.NotifyToUpdateType.OffSale">
+            <summary>
+            下架
+            </summary>
+        </member>
+        <member name="T:Qunau.TripSearchService.Models.ProductTag">
+            <summary>
+            产品标签
+            </summary>
+        </member>
+        <member name="F:Qunau.TripSearchService.Models.ProductTag.None">
+            <summary>
+            无
+            </summary>
+        </member>
+        <member name="F:Qunau.TripSearchService.Models.ProductTag.HotSale">
+            <summary>
+            火爆热销
+            </summary>
+        </member>
+        <member name="F:Qunau.TripSearchService.Models.ProductTag.ServiceOptimal">
+            <summary>
+            服务最优
+            </summary>
+        </member>
+        <member name="F:Qunau.TripSearchService.Models.ProductTag.PriceRatio">
+            <summary>
+            性价比高
+            </summary>
+        </member>
+        <member name="F:Qunau.TripSearchService.Models.ProductTag.FullLowest">
+            <summary>
+            全网最低
+            </summary>
+        </member>
+        <member name="T:Qunau.TripSearchService.Models.QueryLineType">
+            <summary>
+            线路类型
+            </summary>
+        </member>
+        <member name="F:Qunau.TripSearchService.Models.QueryLineType.None">
+            <summary>
+            空无实际意思，表搜索全部类型
+            </summary>
+        </member>
+        <member name="F:Qunau.TripSearchService.Models.QueryLineType.Around">
+            <summary>
+            周边
+            </summary>
+        </member>
+        <member name="F:Qunau.TripSearchService.Models.QueryLineType.ChinaLine">
+            <summary>
+            国内专线
+            </summary>
+        </member>
+        <member name="F:Qunau.TripSearchService.Models.QueryLineType.ExitLine">
+            <summary>
+            出境专线
+            </summary>
+        </member>
+        <member name="F:Qunau.TripSearchService.Models.QueryLineType.GAT">
+            <summary>
+            港奥台
+            </summary>
+        </member>
+        <member name="T:Qunau.TripSearchService.Models.QueryProductCategory">
+            <summary>
+            产品分类
+            </summary>
+        </member>
+        <member name="F:Qunau.TripSearchService.Models.QueryProductCategory.None">
+            <summary>
+            查询全部
+            </summary>
+        </member>
+        <member name="F:Qunau.TripSearchService.Models.QueryProductCategory.SpecialLine">
+            <summary>
+            专线产品
+            </summary>
+        </member>
+        <member name="F:Qunau.TripSearchService.Models.QueryProductCategory.Vertical">
+            <summary>
+            地接产品
+            </summary>
+        </member>
+        <member name="T:Qunau.TripSearchService.Models.QueryProductType">
+            <summary>
+            产品类型
+            </summary>
+        </member>
+        <member name="F:Qunau.TripSearchService.Models.QueryProductType.None">
+            <summary>
+            搜索全部
+            </summary>
+        </member>
+        <member name="F:Qunau.TripSearchService.Models.QueryProductType.PackagedHoliday">
+            <summary>
+            跟团游
+            </summary>
+        </member>
+        <member name="F:Qunau.TripSearchService.Models.QueryProductType.FreeWalker">
+            <summary>
+            自由行
+            </summary>
+        </member>
+        <member name="T:Qunau.TripSearchService.Models.SubType">
+            <summary>
+            预订网站类型
+            </summary>
+        </member>
+        <member name="F:Qunau.TripSearchService.Models.SubType.B2B">
+            <summary>
+            B2B
+            </summary>
+        </member>
+        <member name="F:Qunau.TripSearchService.Models.SubType.B2C">
+            <summary>
+            
+            B2C
+            </summary>
+        </member>
+        <member name="T:Qunau.TripSearchService.Models.TicketType">
+            <summary>
+            门票类型
+            </summary>
+        </member>
+        <member name="F:Qunau.TripSearchService.Models.TicketType.None">
+            <summary>
+            无意义
+            </summary>
+        </member>
+        <member name="F:Qunau.TripSearchService.Models.TicketType.Ticket">
+            <summary>
+            门票
+            </summary>
+        </member>
+        <member name="F:Qunau.TripSearchService.Models.TicketType.Hotel">
+            <summary>
+            酒店
+            </summary>
+        </member>
+        <member name="F:Qunau.TripSearchService.Models.TicketType.Package">
+            <summary>
+            套票
+            </summary>
+        </member>
+        <member name="T:Qunau.TripSearchService.Models.Keyword">
+            <summary>
+            关键词
+            </summary>
+        </member>
+        <member name="P:Qunau.TripSearchService.Models.Keyword.Id">
+            <summary>
+            关键词ID
+            </summary>
+        </member>
+        <member name="P:Qunau.TripSearchService.Models.Keyword.Text">
+            <summary>
+            关键司
+            </summary>
+        </member>
+        <member name="P:Qunau.TripSearchService.Models.Keyword.KeyWordType">
+            <summary>
+            关键词类型
+            </summary>
+        </member>
+        <member name="T:Qunau.TripSearchService.Models.ProductCondition.ProductAttractions">
+            <summary>
+            产品景点
+            </summary>
+        </member>
+        <member name="P:Qunau.TripSearchService.Models.ProductCondition.ProductAttractions.AttractionsID">
+            <summary>
+            景点ID
+            </summary>
+        </member>
+        <member name="P:Qunau.TripSearchService.Models.ProductCondition.ProductAttractions.ProductID">
+            <summary>
+            产品ID
+            </summary>
+        </member>
+        <member name="T:Qunau.TripSearchService.Models.ProductCondition.ProductLineType">
+            <summary>
+            产品类型类型
+            </summary>
+        </member>
+        <member name="P:Qunau.TripSearchService.Models.ProductCondition.ProductLineType.LineType">
+            <summary>
+            线路类型ID
+            </summary>
+        </member>
+        <member name="P:Qunau.TripSearchService.Models.ProductCondition.ProductLineType.ProductID">
+            <summary>
+            产品ID
+            </summary>
+        </member>
+        <member name="P:Qunau.TripSearchService.Models.ProductCondition.ProductLineType.Deleted">
+            <summary>
+            是否删除 0：未删除 1：已删除
+            </summary>
+        </member>
+        <member name="P:Qunau.TripSearchService.Models.ProductCondition.ProductLineType.Status">
+            <summary>
+            产品状态 4:销售中 其他为无效
+            </summary>
+        </member>
+        <member name="T:Qunau.TripSearchService.Models.ProductCondition.ProductStartDate">
+            <summary>
+            产品出团日期
+            </summary>
+        </member>
+        <member name="P:Qunau.TripSearchService.Models.ProductCondition.ProductStartDate.ProductID">
+            <summary>
+            产品ID
+            </summary>
+        </member>
+        <member name="P:Qunau.TripSearchService.Models.ProductCondition.ProductStartDate.StartDate">
+            <summary>
+            出团日期
+            </summary>
+        </member>
+        <member name="T:Qunau.TripSearchService.Models.ProductCondition.ProductTheme">
+            <summary>
+            产品主题
+            </summary>
+        </member>
+        <member name="P:Qunau.TripSearchService.Models.ProductCondition.ProductTheme.ThemeId">
+            <summary>
+            主题ID
+            </summary>
+        </member>
+        <member name="P:Qunau.TripSearchService.Models.ProductCondition.ProductTheme.ProductID">
+            <summary>
+            产品ID
+            </summary>
+        </member>
+        <member name="T:Qunau.TripSearchService.Models.ProductInfo">
+            <summary>
+            产品基本信息
+            </summary>
+        </member>
+        <member name="M:Qunau.TripSearchService.Models.ProductInfo.Format(System.Int32,System.Int32)">
+            <summary>
+            产品图片显处理
+            限定缩略图的宽最多为Width，高最多为Height
+            进行等比缩放，不裁剪。如果只指定 w 参数则表示限定长边（短边自适应），只指定 h 参数则表示限定短边（长边自适应）
+            </summary>
+            <param name="width"></param>
+            <param name="height"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Qunau.TripSearchService.Models.ProductInfo.Format(System.String,System.Int32,System.Int32)">
+            <summary>
+            限定缩略图的宽最多为Width，高最多为Height
+            进行等比缩放，不裁剪。如果只指定 w 参数则表示限定长边（短边自适应），只指定 h 参数则表示限定短边（长边自适应）
+            </summary>
+            <param name="cdn">Cdn图片服务器 如：http://img1.720u.com/ </param>
+            <param name="width"></param>
+            <param name="height"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Qunau.TripSearchService.Models.ProductInfo.ProductID">
+            <summary>
+            产品ID
+            </summary>
+        </member>
+        <member name="P:Qunau.TripSearchService.Models.ProductInfo.ProductNumber">
+            <summary>
+            产品编号
+            </summary>
+        </member>
+        <member name="P:Qunau.TripSearchService.Models.ProductInfo.CompanyID">
+            <summary>
+            产品公司ID
+            </summary>
+        </member>
+        <member name="P:Qunau.TripSearchService.Models.ProductInfo.ProductType">
+            <summary>
+            产品类型
+            1：跟团游
+            2：自由行
+            </summary>
+        </member>
+        <member name="P:Qunau.TripSearchService.Models.ProductInfo.LineType">
+            <summary>
+            线路类型 
+            1：周边游
+            2：国内
+            3：出境
+            4：港澳台
+            </summary>
+        </member>
+        <member name="P:Qunau.TripSearchService.Models.ProductInfo.SpecialLine">
+            <summary>
+            专线类型
+            </summary>
+        </member>
+        <member name="P:Qunau.TripSearchService.Models.ProductInfo.ProductCategory">
+            <summary>
+            产品分类
+            </summary>
+        </member>
+        <member name="P:Qunau.TripSearchService.Models.ProductInfo.ProductTitle">
+            <summary>
+            产品标题
+            </summary>
+        </member>
+        <member name="P:Qunau.TripSearchService.Models.ProductInfo.StartCityName">
+            <summary>
+            出发城市
+            </summary>
+        </member>
+        <member name="P:Qunau.TripSearchService.Models.ProductInfo.ProductDestinations">
+            <summary>
+            目的地
+            </summary>
+        </member>
+        <member name="P:Qunau.TripSearchService.Models.ProductInfo.GetFristDestination">
+            <summary>
+            第一个目的地
+            </summary>
+        </member>
+        <member name="P:Qunau.TripSearchService.Models.ProductInfo.ProductPriceInventorys">
+            <summary>
+            产品价格库存
+            </summary>
+        </member>
+        <member name="P:Qunau.TripSearchService.Models.ProductInfo.SendDates">
+            <summary>
+            发团日期
+            </summary>
+        </member>
+        <member name="P:Qunau.TripSearchService.Models.ProductInfo.Tags">
+            <summary>
+            标签
+            </summary>
+        </member>
+        <member name="P:Qunau.TripSearchService.Models.ProductInfo.Attractions">
+            <summary>
+            景点
+            </summary>
+        </member>
+        <member name="P:Qunau.TripSearchService.Models.ProductInfo.Theme">
+            <summary>
+            主题
+            </summary>
+        </member>
+        <member name="P:Qunau.TripSearchService.Models.ProductInfo.StartCountry">
+            <summary>
+            出发国家编码
+            </summary>
+        </member>
+        <member name="P:Qunau.TripSearchService.Models.ProductInfo.StartState">
+            <summary>
+            出发省/州编码
+            </summary>
+        </member>
+        <member name="P:Qunau.TripSearchService.Models.ProductInfo.StartCity">
+            <summary>
+            出发城市编码
+            </summary>
+        </member>
+        <member name="P:Qunau.TripSearchService.Models.ProductInfo.StartRegion">
+            <summary>
+            出去区/县编码
+            </summary>
+        </member>
+        <member name="P:Qunau.TripSearchService.Models.ProductInfo.StartDate">
+            <summary>
+            最近一天的出团日期
+            </summary>
+        </member>
+        <member name="P:Qunau.TripSearchService.Models.ProductInfo.MaketPrice">
+            <summary>
+            最近一天市场价
+            </summary>
+        </member>
+        <member name="P:Qunau.TripSearchService.Models.ProductInfo.ShowPrice">
+            <summary>
+            显示价格
+            </summary>
+        </member>
+        <member name="P:Qunau.TripSearchService.Models.ProductInfo.StrokeDays">
+            <summary>
+            行程天数
+            </summary>
+        </member>
+        <member name="P:Qunau.TripSearchService.Models.ProductInfo.StrokeNight">
+            <summary>
+            行程晚数
+            </summary>
+        </member>
+        <member name="P:Qunau.TripSearchService.Models.ProductInfo.ToTransportation">
+            <summary>
+            去程交通
+            </summary>
+        </member>
+        <member name="P:Qunau.TripSearchService.Models.ProductInfo.ReturnTransportation">
+            <summary>
+            回程交通
+            </summary>
+        </member>
+        <member name="P:Qunau.TripSearchService.Models.ProductInfo.CoverImg">
+            <summary>
+            产品封面图片
+            </summary>
+        </member>
+        <member name="P:Qunau.TripSearchService.Models.ProductInfo.LineFeatures">
+            <summary>
+            推荐理由
+            </summary>
+            <value>推荐理由</value>
+        </member>
+        <member name="P:Qunau.TripSearchService.Models.ProductInfo.InsertDate">
+            <summary>
+            产品发布时间
+            </summary>
+        </member>
+        <member name="P:Qunau.TripSearchService.Models.ProductInfo.LastUpdateDate">
+            <summary>
+            产品最后更新时间
+            </summary>
+        </member>
+        <member name="P:Qunau.TripSearchService.Models.ProductInfo.Protection">
+            <summary>
+            权益保障 
+            </summary>
+        </member>
+        <member name="P:Qunau.TripSearchService.Models.ProductInfo.Certification">
+            <summary>
+            企业认证
+            </summary>
+        </member>
+        <member name="P:Qunau.TripSearchService.Models.ProductInfo.Exclusive">
+            <summary>
+            独家产品
+            </summary>
+        </member>
+        <member name="P:Qunau.TripSearchService.Models.ProductInfo.ServiceTags">
+            <summary>
+            服务标签
+            </summary>
+        </member>
+        <member name="P:Qunau.TripSearchService.Models.ProductInfo.ProductTag">
+            <summary>
+            固定位标签
+            </summary>
+        </member>
+        <member name="P:Qunau.TripSearchService.Models.ProductInfo.IsRecommend">
+            <summary>
+            是否为推荐产品
+            </summary>
+        </member>
+        <member name="T:Qunau.TripSearchService.Models.ProductInfoExtend">
+            <summary>
+            产品搜索扩展
+            </summary>
+        </member>
+        <member name="P:Qunau.TripSearchService.Models.ProductInfoExtend.TargetedBuyerID">
+            <summary>
+            指定门市ID（指定的采购/分销ID）
+            </summary>
+        </member>
+        <member name="P:Qunau.TripSearchService.Models.ProductInfoExtend.Type">
+            <summary>
+            B2B产品B2C产品  0：B2B 1:B2C，
+            </summary>
+        </member>
+        <member name="P:Qunau.TripSearchService.Models.ProductInfoExtend.StartCode">
+            <summary>
+            出发地Code
+            </summary>
+        </member>
+        <member name="P:Qunau.TripSearchService.Models.ProductInfoExtend.IsInstantConfirmation">
+            <summary>
+            即时确认
+            </summary>
+        </member>
+        <member name="P:Qunau.TripSearchService.Models.ProductInfoExtend.SpecialLineName">
+            <summary>
+            专线类型名称
+            </summary>
+        </member>
+        <member name="P:Qunau.TripSearchService.Models.ProductInfoExtend.Price">
+            <summary>
+            最近一天的价格
+            </summary>
+        </member>
+        <member name="P:Qunau.TripSearchService.Models.ProductInfoExtend.LastMaketPrice">
+            <summary>
+            最近一天市场价格
+            </summary>
+        </member>
+        <member name="P:Qunau.TripSearchService.Models.ProductInfoExtend.LowerPrice">
+            <summary>
+            最近一天下级价 0： 没有价格
+            </summary>
+        </member>
+        <member name="P:Qunau.TripSearchService.Models.ProductInfoExtend.BabyMaketPrice">
+            <summary>
+            最近一天儿童市场价 0：没有价格
+            </summary>
+        </member>
+        <member name="P:Qunau.TripSearchService.Models.ProductInfoExtend.BabyPrice">
+            <summary>
+             最近一天儿童市价 0：没有价格
+            </summary>
+        </member>
+        <member name="P:Qunau.TripSearchService.Models.ProductInfoExtend.LastTakeOffDate">
+            <summary>
+            最近一天出团日期
+            </summary>
+        </member>
+        <member name="P:Qunau.TripSearchService.Models.ProductInfoExtend.SortPrice">
+            <summary>
+            排序价格
+            </summary>
+        </member>
+        <member name="P:Qunau.TripSearchService.Models.ProductInfoExtend.Hits">
+            <summary>
+            产品点击量
+            </summary>
+        </member>
+        <member name="P:Qunau.TripSearchService.Models.ProductInfoExtend.Themes">
+            <summary>
+            主题
+            </summary>
+        </member>
+        <member name="P:Qunau.TripSearchService.Models.ProductInfoExtend.Deleted">
+            <summary>
+            是否删除 0：未删除 1：已删除
+            </summary>
+        </member>
+        <member name="P:Qunau.TripSearchService.Models.ProductInfoExtend.Status">
+            <summary>
+            产品状态 4:销售中 其他为无效
+            </summary>
+        </member>
+        <member name="P:Qunau.TripSearchService.Models.ProductInfoExtend.ConfirmDate">
+            <summary>
+            卖家平均确认时间（秒）
+            用于排序
+            </summary>
+        </member>
+        <member name="P:Qunau.TripSearchService.Models.ProductInfoExtend.NotifcationDate">
+            <summary>
+            卖家平均出团通知时间（秒）
+            用于排序
+            </summary>
+        </member>
+        <member name="P:Qunau.TripSearchService.Models.ProductInfoExtend.IsDisProduct">
+            <summary>
+            产品当前是否是在独立分销商系统下售卖
+            用于排序
+            </summary>
+        </member>
+        <member name="P:Qunau.TripSearchService.Models.ProductInfoExtend.ChildrenProduct">
+            <summary>
+            排序前处理,产品是否只有独立价格
+            </summary>
+        </member>
+        <member name="P:Qunau.TripSearchService.Models.ProductInfoExtend.IsTraffic">
+            <summary>
+            是否有交通
+            </summary>
+        </member>
+        <member name="P:Qunau.TripSearchService.Models.ProductInfoExtend.IstHotel">
+            <summary>
+            是否有酒店
+            </summary>
+        </member>
+        <member name="P:Qunau.TripSearchService.Models.ProductInfoExtend.IsTicket">
+            <summary>
+            是否有门票
+            </summary>
+        </member>
+        <member name="P:Qunau.TripSearchService.Models.ProductInfoExtend.IsVisas">
+            <summary>
+            是否有签证
+            </summary>
+        </member>
+        <member name="P:Qunau.TripSearchService.Models.ProductInfoExtend.IsOther">
+            <summary>
+            是否有其它
+            </summary>
+        </member>
+        <member name="P:Qunau.TripSearchService.Models.ProductInfoExtend.PlatformAudit">
+            <summary>
+             平台审核是否通过
+            </summary>
+        </member>
+        <member name="P:Qunau.TripSearchService.Models.ProductInfoExtend.ProductLineCategory">
+            <summary>
+            产品线路分类
+            Line: 线路产品
+            Ticke: 景点门票
+            </summary>
+        </member>
+        <member name="P:Qunau.TripSearchService.Models.ProductInfoExtend.TicketType">
+            <summary>
+            门票类型
+            </summary>
+        </member>
+        <member name="P:Qunau.TripSearchService.Models.ProductInfoExtend.Hot">
+            <summary>
+            热度（点击量）
+            </summary>
+        </member>
+        <member name="P:Qunau.TripSearchService.Models.ProductInfoExtend.Score">
+            <summary>
+            产品服务评分
+            </summary>
+        </member>
+        <member name="T:Qunau.TripSearchService.Models.ProductDestination">
+            <summary>
+            产品目的地
+            </summary>
+        </member>
+        <member name="P:Qunau.TripSearchService.Models.ProductDestination.EndCountry">
+            <summary>
+            出发国家编码
+            </summary>
+        </member>
+        <member name="P:Qunau.TripSearchService.Models.ProductDestination.EndState">
+            <summary>
+            出发省/州编码
+            </summary>
+        </member>
+        <member name="P:Qunau.TripSearchService.Models.ProductDestination.EndCity">
+            <summary>
+            出发城市编码
+            </summary>
+        </member>
+        <member name="P:Qunau.TripSearchService.Models.ProductDestination.EndRegion">
+            <summary>
+            出发区/县编码
+            </summary>
+        </member>
+        <member name="P:Qunau.TripSearchService.Models.ProductDestination.EndCityName">
+            <summary>
+            目的城市
+            </summary>
+        </member>
+        <member name="P:Qunau.TripSearchService.Models.ProductDestination.EndCode">
+            <summary>
+            编码
+            </summary>
+        </member>
+        <member name="P:Qunau.TripSearchService.Models.ProductDestination.LatLng">
+            <summary>
+            获取或设置坐标
+            格式：lat,lon
+            </summary>
+        </member>
+        <member name="T:Qunau.TripSearchService.Models.ProductPriceInventory">
+            <summary>
+            产品价格库存
+            </summary>
+        </member>
+        <member name="P:Qunau.TripSearchService.Models.ProductPriceInventory.SellDate">
+            <summary>
+            库存日期
+            </summary>
+        </member>
+        <member name="P:Qunau.TripSearchService.Models.ProductPriceInventory.Inventory">
+            <summary>
+            剩余库存
+            </summary>
+        </member>
+        <member name="P:Qunau.TripSearchService.Models.ProductPriceInventory.SellPrice">
+            <summary>
+            销售价格
+            </summary>
+        </member>
+        <member name="P:Qunau.TripSearchService.Models.ProductPriceInventory.MaketPrice">
+             <summary>
+            市场价
+             </summary>
+        </member>
+        <member name="P:Qunau.TripSearchService.Models.ProductPriceInventory.BabyMaketPrice">
+            <summary>
+            儿童市场价
+            </summary>
+        </member>
+        <member name="P:Qunau.TripSearchService.Models.ProductPriceInventory.BabyPrice">
+            <summary>
+            儿单价
+            </summary>
+        </member>
+        <member name="P:Qunau.TripSearchService.Models.ProductPriceInventory.LowerPrice">
+            <summary>
+            下级价
+            </summary>
+        </member>
+        <member name="T:Qunau.TripSearchService.Models.ServiceCommitments">
+            <summary>
+            服务承诺
+            </summary>
+        </member>
+        <member name="P:Qunau.TripSearchService.Models.ServiceCommitments.ServiceCommitmentID">
+            <summary>
+            服务承诺ID
+            </summary>
+        </member>
+        <member name="P:Qunau.TripSearchService.Models.ServiceCommitments.ProductType">
+            <summary>
+            服务承诺类型
+            </summary>
+        </member>
+        <member name="P:Qunau.TripSearchService.Models.ServiceCommitments.ServiceCommitmentName">
+            <summary>
+            服务承诺名称
+            </summary>
+        </member>
+        <member name="P:Qunau.TripSearchService.Models.ServiceCommitments.ServiceCommitmentValue">
+            <summary>
+            服务承诺权重
+            </summary>
+        </member>
+        <member name="P:Qunau.TripSearchService.Models.ServiceCommitments.TopParentID">
+            <summary>
+            顶级父级ID
+            </summary>
+        </member>
+        <member name="P:Qunau.TripSearchService.Models.ServiceCommitments.ParentID">
+            <summary>
+            父级ID
+            </summary>
+        </member>
+        <member name="P:Qunau.TripSearchService.Models.ServiceCommitments.ProductID">
+            <summary>
+            扩展字段
+            用于存放产品服务承诺
+            </summary>
+        </member>
+        <member name="T:Qunau.TripSearchService.Models.ProductSaleInfo">
+            <summary>
+            产品销售情况（统计当前时间的前一天）
+            </summary>
+        </member>
+        <member name="P:Qunau.TripSearchService.Models.ProductSaleInfo.ProductID">
+            <summary>
+            产品编号
+            </summary>
+        </member>
+        <member name="P:Qunau.TripSearchService.Models.ProductSaleInfo.SaleNum">
+            <summary>
+            销售量
+            </summary>
+        </member>
+        <member name="T:Qunau.TripSearchService.Models.TicketSearch">
+            <summary>
+            门票搜索条件
+            </summary>
+        </member>
+        <member name="P:Qunau.TripSearchService.Models.TicketSearch.KeyWord">
+            <summary>
+            关键字
+            </summary>
+        </member>
+        <member name="P:Qunau.TripSearchService.Models.TicketSearch.TicketSearchType">
+            <summary>
+            查询类型
+            </summary>
+        </member>
+        <member name="P:Qunau.TripSearchService.Models.TicketSearch.DistributorCompanyID">
+            <summary>
+            独立分销商ID
+            </summary>
+        </member>
+        <member name="P:Qunau.TripSearchService.Models.TicketSearch.buyerID">
+            <summary>
+            买家ID
+            </summary>
+        </member>
+        <member name="T:Qunau.TripSearchService.Models.TicketSearchType">
+            <summary>
+            门票查询类型
+            </summary>
+        </member>
+        <member name="F:Qunau.TripSearchService.Models.TicketSearchType.全站">
+            <summary>
+            全部
+            </summary>
+        </member>
+        <member name="F:Qunau.TripSearchService.Models.TicketSearchType.门票">
+            <summary>
+            门票
+            </summary>
+        </member>
+        <member name="F:Qunau.TripSearchService.Models.TicketSearchType.酒店">
+            <summary>
+            酒店
+            </summary>
+        </member>
+        <member name="F:Qunau.TripSearchService.Models.TicketSearchType.套票">
+            <summary>
+            套票
+            </summary>
+        </member>
+        <member name="T:Qunau.TripSearchService.Models.TravelSearch">
+            <summary>
+            产品搜索条件Model
+            </summary>
+        </member>
+        <member name="P:Qunau.TripSearchService.Models.TravelSearch.SearchModel">
+            <summary>
+            查询模式
+            </summary>
+        </member>
+        <member name="P:Qunau.TripSearchService.Models.TravelSearch.SortBy">
+            <summary>
+            排序方式
+            </summary>
+        </member>
+        <member name="P:Qunau.TripSearchService.Models.TravelSearch.DistributorCompanyID">
+            <summary>
+            独立分销商用户Id 0：非独立分销商
+            </summary>
+        </member>
+        <member name="P:Qunau.TripSearchService.Models.TravelSearch.BuyerID">
+            <summary>
+            买家ID 0: 没有买家
+            </summary>
+        </member>
+        <member name="P:Qunau.TripSearchService.Models.TravelSearch.StartAreaCode">
+            <summary>
+            出发地城市编码 空搜索
+            </summary>
+        </member>
+        <member name="P:Qunau.TripSearchService.Models.TravelSearch.EndAreaCode">
+            <summary>
+            目的地城市编码 空不搜索
+            </summary>
+        </member>
+        <member name="P:Qunau.TripSearchService.Models.TravelSearch.LineType">
+            <summary>
+            线路类型 0：不搜索 1:周边 2：国内 3：出境 4：港澳台
+            </summary>
+        </member>
+        <member name="P:Qunau.TripSearchService.Models.TravelSearch.ProductType">
+            <summary>
+            产品类型 0：不搜索,1：为跟团游 2：为自由行
+            </summary>
+        </member>
+        <member name="P:Qunau.TripSearchService.Models.TravelSearch.ProductCategory">
+            <summary>
+            产品分类 0：不搜索
+            </summary>
+        </member>
+        <member name="P:Qunau.TripSearchService.Models.TravelSearch.SpecialLine">
+            <summary>
+            专线类型 0：不搜索
+            </summary>
+        </member>
+        <member name="P:Qunau.TripSearchService.Models.TravelSearch.StrokeDays">
+            <summary>
+            行程天数 0：不搜索
+            </summary>
+        </member>
+        <member name="P:Qunau.TripSearchService.Models.TravelSearch.StartDate">
+            <summary>
+            出团起始日期 null：不搜索
+            </summary>
+        </member>
+        <member name="P:Qunau.TripSearchService.Models.TravelSearch.EndDate">
+            <summary>
+            出团日结束日期 null：不搜索
+            </summary>
+        </member>
+        <member name="P:Qunau.TripSearchService.Models.TravelSearch.StartPrice">
+            <summary>
+            价格搜索 起始价 0：不搜索
+            </summary>
+        </member>
+        <member name="P:Qunau.TripSearchService.Models.TravelSearch.EndPrice">
+            <summary>
+             价格搜索结束价 0：不搜索
+            </summary>
+        </member>
+        <member name="P:Qunau.TripSearchService.Models.TravelSearch.GoTraffic">
+            <summary>
+            搜索去程交通工具 空：不搜索
+            </summary>
+        </member>
+        <member name="P:Qunau.TripSearchService.Models.TravelSearch.ReturnTraffic">
+            <summary>
+            搜索回程交通工具 空：不搜索
+            </summary>
+        </member>
+        <member name="P:Qunau.TripSearchService.Models.TravelSearch.Keys">
+            <summary>
+            搜索关键词 空：不搜索
+            </summary>
+        </member>
+        <member name="P:Qunau.TripSearchService.Models.TravelSearch.Exclusive">
+            <summary>
+            独家产品 true:查询
+            </summary>
+        </member>
+        <member name="P:Qunau.TripSearchService.Models.TravelSearch.Protection">
+            <summary>
+            权益保障 true:查询
+            </summary>
+        </member>
+        <member name="P:Qunau.TripSearchService.Models.TravelSearch.Certification">
+            <summary>
+            企业认证 true:查询
+            </summary>
+        </member>
+        <member name="P:Qunau.TripSearchService.Models.TravelSearch.CompanyName">
+            <summary>
+            公司名称 空：不搜索
+            </summary>
+        </member>
+        <member name="T:Qunau.TripSearchService.Models.SearchModel">
+            <summary>
+             查询模式
+            </summary>
+        </member>
+        <member name="F:Qunau.TripSearchService.Models.SearchModel.None">
+            <summary>
+            默认
+            </summary>
+        </member>
+        <member name="F:Qunau.TripSearchService.Models.SearchModel.综合模式">
+            <summary>
+            综合模式
+            </summary>
+        </member>
+        <member name="F:Qunau.TripSearchService.Models.SearchModel.当地参团">
+            <summary>
+            当地参团
+            </summary>
+        </member>
+        <member name="F:Qunau.TripSearchService.Models.SearchModel.出发地目的地">
+            <summary>
+            出发地目的地
+            </summary>
+        </member>
+        <member name="F:Qunau.TripSearchService.Models.SearchModel.查询商家">
+            <summary>
+            查询商家
+            </summary>
+        </member>
+        <member name="T:Qunau.TripSearchService.Models.SortBy">
+            <summary>
+            排序方式
+            </summary>
+        </member>
+        <member name="F:Qunau.TripSearchService.Models.SortBy.Default">
+            <summary>
+            综合（默认）
+            </summary>
+        </member>
+        <member name="F:Qunau.TripSearchService.Models.SortBy.人气">
+            <summary>
+            人气
+            </summary>
+        </member>
+        <member name="F:Qunau.TripSearchService.Models.SortBy.价格">
+            <summary>
+            价格
+            </summary>
+        </member>
+        <member name="F:Qunau.TripSearchService.Models.SortBy.更新时间">
+            <summary>
+            更新时间
+            </summary>
+        </member>
+        <member name="T:Qunau.TripSearchService.Models.Company.UserStructure">
+            <summary>
+            用户结构
+            </summary>
+        </member>
+        <member name="P:Qunau.TripSearchService.Models.Company.UserStructure.CompanyID">
+            <summary>
+            公司ID
+            </summary>
+        </member>
+        <member name="P:Qunau.TripSearchService.Models.Company.UserStructure.Deleted">
+            <summary>
+            是否删除 0:未删除 1:删除
+            </summary>
+        </member>
+        <member name="P:Qunau.TripSearchService.Models.Company.UserStructure.IsEnabled">
+            <summary>
+            是否启用 0:停用 1:启用
+            </summary>
+        </member>
+        <member name="P:Qunau.TripSearchService.Models.Company.UserStructure.CompanyNO">
+            <summary>
+            当前用户结构
+            </summary>
+        </member>
+    </members>
+</doc>
